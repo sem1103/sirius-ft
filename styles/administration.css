@@ -1,0 +1,333 @@
+
+
+
+main{
+    padding: 120px 0 0 0;
+}
+
+h2{
+    font: 700 52px Montserrat;
+    color: var(--gray);
+    line-height: 64px;
+}
+main > p.container{
+    font: 300 18px Montserrat;
+    line-height: 26px;
+    margin: 30px auto 80px auto;
+}
+
+/*basic__powers*/
+
+.basic__powers{
+    background-color: #f3f3f3;
+    padding: 80px 0 ;
+}
+.basic__powers h3{
+    font: 700 24px Montserrat;
+    line-height: 30px;
+    color: var(--gray);
+}
+.basic__powers ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 90px auto 30px auto;
+}
+.basic__powers li{
+    display: flex;
+    font: 300 16px Montserrat;
+    color: var(--gray);
+    line-height: 25px;
+    width: calc(50% - 25px);
+    margin: 0 0 30px 0;
+}
+.basic__powers svg{
+    margin: 0 20px 0 0;
+}
+
+/*admin__structure*/
+
+.admin__structure > div{
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 0 0 0;
+}
+.admin__structure h3{
+    font: 700 42px Montserrat;
+    color: var(--gray);
+}
+.show__structure{
+    display: flex;
+    padding: 10px 15px ;
+    border: 1px solid #000;
+    border-radius: 20px;
+    align-items: center;
+    color: var(--gray);
+}
+.show__structure svg{
+    margin: 0 10px 0 0;
+    fill: var(--gray);
+    transition: all .3s ease-in-out;
+}
+
+.show__structure:hover{
+    color: var(--green);
+    border-color: var(--green);
+    box-shadow: 0 0 10px var(--green);
+    text-shadow: 0 0 10px var(--green);
+}
+.show__structure:hover svg{
+    fill: var(--green);
+}
+
+.admin__structure__persons{
+    padding: 40px 0 20px 0;
+    border-bottom: 1px solid #2e2d2c40;
+}
+.admin__structure__persons  article{
+    display: flex;
+    max-width: 980px;
+    margin: 0 0 40px 0;
+}
+.admin__structure__persons article:first-child{
+    background-color: #f0f0f0;
+}
+.admin__structure__persons article:first-child .person__desc{
+    margin-top: 20px;
+}
+.admin__structure__persons article:first-child h5{
+    margin: 20px 0 0 0;
+}
+.admin__structure__persons  article > div:first-child{
+    display: flex;
+    margin: 0;
+}
+article.has__accardion{
+    display: grid;
+    grid-template-areas: 'img personDesc'
+                         'img person__title'
+                         '... accardions'
+                         '... accardions';
+}
+.accordions , .person__title, .person__desc{
+    margin: 0 0 0 50px ;
+}
+.accordion{
+    margin: 0 0 30px 0;
+}
+.has__accardion img{
+    grid-area: img;
+}
+.person__desc{
+    grid-area: personDesc;
+}
+.person__title{
+    display: flex;
+    align-items: flex-end;
+    grid-area: person__title;
+}
+.accardions{
+    grid-area: accardions;
+    margin: 30px 0 0 50px;
+}
+
+
+
+.has__accardion 
+.admin__structure__persons  article:first-child{
+    background: #f0f0f0;
+    padding: 30px;
+
+}
+.admin__structure__persons article:first-child img{
+    max-width: 330px;
+}
+.admin__structure__persons article img{
+    max-width: 260px;
+}
+.admin__structure__persons a{
+    font: 700 24px Montserrat;
+    color: var(--gray);
+}
+
+.admin__structure__persons h5{
+    font: 300 24px Montserrat;
+    color: var(--gray);
+}
+.person__title h5{
+    background: #f0f0f0;
+    padding: 30px;
+    font: 700 18px Montserrat;
+}
+.admin__structure__persons p{
+    font: 300 17px Montserrat;
+    color: var(--gray);
+    margin: 10px 0 0 0;
+}
+.other__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.other__info h5{
+    font: 700 18px Montserrat;
+    color: var(--gray);
+    padding: 30px;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+article div.accordion{
+    background-color: #f0f0f0;
+    padding: 30px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.accordion h5{
+    font: 700 18px Montserrat;
+    color: var(--gray);
+    margin: 0;
+    position: relative;
+    width: 95%;
+}
+
+.accordion h5::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
+    background-image: url("data:image/svg+xml,%3Csvg width='28px' height='28px' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 5L14.15 10C14.4237 10.2563 14.6419 10.5659 14.791 10.9099C14.9402 11.2539 15.0171 11.625 15.0171 12C15.0171 12.375 14.9402 12.7458 14.791 13.0898C14.6419 13.4339 14.4237 13.7437 14.15 14L9 19' stroke='%23000000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    transition: all .7s ease-in-out;
+}
+
+
+.accordion__item{
+    display: flex;
+}
+article .accordion__item img{
+    max-width: 172px;
+    height: 225px;
+    object-fit: cover;
+    margin: 30px 20px 0 0;
+}
+.accordion__item h4{
+    font: 700 18px Montserrat;
+    color: var(--gray);
+    margin: 30px 0 0 0;
+
+}
+
+.active__accordion h5::after{
+    transform: translateY(-50%) rotate(90deg) scale(1.1);
+
+}
+.active__accordion{
+    box-shadow: 0 0 10px #f0f0f0;
+    transform: scale(1.05);
+}
+
+
+
+/*other__resurce*/
+.other__resurce{
+    margin: 40px auto;
+}
+.other__resurce svg{
+    width: 40px;
+    margin: 0 10px 0 0;
+}
+.other__resurce a{
+    display: flex;
+    align-items: center;
+    font: 700 24px Montserrat;
+    color: #000;
+    line-height: 36px;
+    width: max-content;
+    margin: 0 0 30px 0;
+}
+.other__resurce a:hover{
+    text-decoration: underline;
+}
+
+/*Media*/
+
+@media only screen and (max-width: 768px) {
+    .container{
+        max-width: 600px;
+    }
+    
+    article div.accardions{
+        max-width: 100%;
+    }
+    .other__info{
+        margin: 0;
+    }
+    .accardions, .person__title, .person__desc{
+        margin: 0 0 0 30px;
+    }
+    article.has__accardion{
+        grid-template-columns: repeat(2, minmax(0, 1fr)); 
+
+        grid-template-areas: 'img personDesc' 
+                            ' person__title person__title'
+                             ' accardions accardions';
+    }
+    .person__title, .accardions{
+        margin: 30px 0 0 0;
+    }
+    .admin__structure__persons article:first-child{
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+    .admin__structure__persons article:first-child .person__desc{
+        margin: 30px 0 0 0;
+    }
+    .basic__powers ul{
+        flex-direction: column;
+        margin: 50px auto 10px auto;
+    }
+    .basic__powers li{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .basic__powers li:last-child{
+        margin: 0;
+    }
+    .basic__powers{
+        padding: 40px 0;
+    }
+}
+
+@media only screen and (max-width: 570px){
+    .accordion__item,.admin__structure__persons article, .admin__structure > div{
+        flex-direction: column;
+    }
+    .person__desc{
+        margin: 25px 0 50px 0;
+    }
+    .admin__structure__persons article{
+        margin: 0 0 60px 0;
+    }
+    article.has__accardion{
+        display: block;
+    }
+    .show__structure{
+        width: max-content;
+        margin: 25px 0 0 0;
+    }
+    .other__resurce a{
+        font-size: 20px;
+        width: 100%;
+    }
+    .admin__structure h3{
+        font-size: 33px;
+    }
+    h2{
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <div class="feedback container">
+            <div class="form__desc " >
+                <h5>
+                    Обратная связь
+                </h5>
+                <p>
+                    Вы можете задать вопрос, написать ваши предложения или пожелания в Совет федеральной территории «Сириус».
+                </p>
+            </div>
+
+            <form action="test.php" method="post">
+                <label>
+                    <input type="text" name="fullName" >
+                    <span>ФИО</span>
+                </label>
+                <label>
+                    <input type="email" name="email" >
+                    <span>E-mail</span>
+                </label>
+               <label>
+                <input type="tel" name="phone" data-phone-pattern = "+7 (___) ___-__-__">
+                <span>Телефон</span>
+               </label>
+               <label>
+                <textarea name="" id=""  rows="5"></textarea>
+                <span>Ваще сообщение</span>
+               </label>
+
+                <button type="submit">Отправить</button>
+                <p>Нажимая на кнопку, вы даете согласие на обработку персональных данных.</p>
+            </form>
+       </div>
+    </div>
+</body>
+</html>

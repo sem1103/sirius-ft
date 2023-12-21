@@ -1,0 +1,108 @@
+
+/*footer*/
+footer{
+    padding: 60px 0;
+    background: url(/img/footer-bg.webp) center/cover;
+    color: #fff;
+}
+footer a:hover , .eye__btn:hover{
+    text-shadow: 0 0 10px #fff;
+}
+.footer__info{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 70px;
+}
+.soc__icons svg{
+    width: 38px;
+}
+.copy h6{
+    font: 700 16px Montserrat;
+}
+.copy p{
+    line-height: 22px;
+}
+.copy p a{
+    color: #fff;
+    text-decoration: underline;
+    line-height: 22px;
+}
+.copy > a{
+    font: 700 16px Montserrat;
+    color: #fff;
+    text-decoration: underline;
+
+}
+
+.contacts h5, .admin__contacts h5{
+    font:  700 24px Montserrat;
+    line-height: 34px;
+}
+.contacts a, .admin__contacts a{
+    line-height: 22px;
+    color: #fff;
+    font: 16px Montserrat;
+}
+
+.contacts ul li:last-child a, .admin__contacts ul li:last-child a{
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.soc__icons, .eye__btn{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.eye__btn {
+    background:none;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    cursor: pointer; 
+    font: 16px Montserrat;
+    color: #fff;
+    gap: 15px;
+    margin: 30px 0 0 0 ;
+    transition: all .3s ease-in-out;
+}
+.eye__btn img{
+    transition:  all .3s ease-in-out;
+}
+.eye__btn:hover img{
+    transform: scale(1.2) rotate(180deg);
+}
+.data__processing{
+    margin: 20px 0 0 0;
+    text-decoration: underline;
+}
+.data__processing a{
+    font: 600 16px Montserrat;
+    color: #fff;
+    line-height: 25px;
+}
+
+
+
+
+@media only screen and (max-width: 678px) {
+    footer{
+        padding: 45px 75px;
+    }
+    footer .container{
+        padding: 0;
+    }
+    .footer__info{
+        grid-template-columns: auto;
+       
+        gap: 25px;
+    }
+}
+
+@media only screen and (max-width: 430px){
+   
+    footer{
+        padding: 45px 20px;
+    }
+}

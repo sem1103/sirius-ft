@@ -1,0 +1,130 @@
+main{
+    padding: 90px 0 70px 0;
+}
+h2{
+    font: 700 52px Montserrat;
+    color: var(--gray);
+    line-height: 64px;
+}
+
+
+.news__filter ul, .more__news__filter{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 30px 0 40px 0;
+    flex-wrap: wrap;
+}
+.news__filter button, .more__news__filter button, .more__news__filter a{
+    display: block;
+    font: 600 20px Montserrat;
+    color: var(--gray);
+    margin: 0 10px 10px 0;
+    border: 0;
+    background: #f5f5f5;
+    cursor: pointer;
+    padding: 6px 18px;
+    transition: all .3s ease-in-out;
+    border-radius: 10px;
+}
+.news__filter li:last-child button{
+    margin: 0;
+}
+
+.news__items{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 330px));
+    gap: 45px 30px;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.news__data{
+    font: 300 12px Montserrat;
+    color: var(--gray);
+    margin: 15px 0 10px 0;
+}
+.news__items  h3{
+    font: 700 23px/31px Montserrat;
+    color: var(--gray);
+    margin: 0 0 8px 0;
+}
+.news__text{
+    font: 300 16px/25px Montserrat;
+    color: var(--gray);
+}
+
+.news__items article:hover{
+    box-shadow: 0 0 10px #ccc;
+    transform: scale(1.03);
+
+}
+.news__items article{
+    padding: 15px 10px;
+    transition: all .5s ease-in-out;
+}
+
+button.active__filter,.active__filter, .news__filter button:hover, .more__news__filter button:hover, .more__news__filter a:hover{
+    color: #fff;
+    background: var(--green);
+}
+
+
+/*more__news*/
+.more__news{
+    margin: 60px auto 40px auto;
+}
+.more__news > h3{
+    font: 700 36px Montserrat;
+}
+.more__news__filter button, .more__news__filter a{
+    font-size: 16px;
+    padding: 10px 30px;
+}
+.more__news__filter a{
+    margin-right: 0;
+}
+
+
+.add__more{
+    display: table;
+    margin: 50px auto 0 auto;
+    border-radius: 10px;
+    background-color: var(--green);
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    color: #fff;
+    font: 700 16px Montserrat;
+    padding: 20px 50px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.add__more:hover{
+    box-shadow: 0 0 10px var(--green);
+}
+
+/*Media*/
+
+@media only screen and (max-width: 720px) { 
+    .news__items{
+        grid-template-columns: repeat(auto-fill, minmax(130px, 280px));
+    }
+    main{
+        padding: 70px 0;
+    }
+}
+@media only screen and (max-width: 620px) { 
+    h2{
+        font-size: 30px;
+    }
+    .news__items{
+        grid-template-columns: repeat(auto-fill, minmax(130px, 100%));
+    }
+   .news__items img{
+    max-width: 100%;
+   }
+   .more__news__filter button, .more__news__filter a{
+    font-size: 14px;
+   }
+}

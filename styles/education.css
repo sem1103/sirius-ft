@@ -1,0 +1,412 @@
+main{
+    padding: 90px 0 70px 0;
+}
+h2{
+    font: 700 52px Montserrat;
+    color: var(--gray);
+    line-height: 64px;
+    margin: 0 0 45px 0;
+}
+
+/*map__section*/
+.map__section h4{
+    font: 700 32px Montserrat;
+    color: var(--gray);
+}
+.map__section > p{
+    font: 300 18px Montserrat;
+    color: var(--gray);
+    margin: 30px 0;
+}
+.map_section{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin: 0 0 60px 0;
+}
+#locationList{
+    margin: 0 15px 0 0;
+    
+}
+#locationList li{
+    font: 600 16px Montserrat;
+    color: var(--gray);
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+
+
+#locationList .active__location, #locationList li:hover{
+    background: var(--green);
+    color: #fff;
+}
+.location__name{
+    font: 700 13px Montserrat;
+}
+.location__link{
+    color: var(--gray);
+    font: 12px Montserrat;
+}
+
+/*info__block*/
+.info__block{
+    background: #efefef;
+    padding:60px 0;
+}
+
+.info__block h3{
+    font: 700 32px/42px Montserrat;
+    color: var(--gray);
+}
+.info__block > p{
+    font: 300 18px/28px Montserrat;
+    color: var(--gray);
+    margin: 30px auto;
+}
+.info__items{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.info__items article{
+    padding: 35px 25px 48px 25px;
+    background-color: #fff;
+    border: 1px solid #cccaca;
+    border-radius: 10px;
+    flex-basis: calc(33.33% - 25px);
+}
+.info__items h4{
+    font: 700 26px/35px Montserrat;
+    color: var(--gray);
+    margin: 0 0 30px 0;
+}
+.info__items p, .info__items li{
+    font: 300 16px/25px Montserrat;
+    color: var(--gray);
+}
+.info__items a, .accardion__item a {
+    color: var(--gray);
+    text-decoration: underline;
+    transition: all .3s ease-in-out;
+
+}
+.info__items a:hover, .about__school a:hover, .accardion__item a:hover{
+    text-shadow: 0 0 10px var(--green);
+}
+
+.info__items li, .accardion__item ul li{
+    list-style: disc;
+    margin: 0 0 5px 20px;
+}
+
+/*about__school*/
+.about__school h3, .faq__block h3, .vacancy h3, .documents h3{
+    margin: 55px 0 30px 0;
+    font: 700 32px/40px Montserrat;
+    color: var(--gray);
+}
+
+.about__school p, .about__school a{
+    font: 300 18px/28px Montserrat;
+    color: var(--gray);
+    padding:  0 0 30px 0;
+}
+.about__school a{
+    padding: 0;
+    text-decoration: underline;
+    transition: all .3s ease-in-out;
+}
+
+/*faq__block*/
+.faq__block{
+    margin: 70px auto 60px auto;
+}
+.faq__nav{
+    display: flex;
+}
+
+.faq__nav li{
+    width: 50%;
+    margin: 30px 0;
+    border: 1px solid var(--green);
+}
+.faq__nav button{
+    width: 100%;
+    background: #fff;
+    border: 0;
+    padding: 15px;
+    transition: background .3s ease-in-out;
+    font: 300 18px  Montserrat;
+    cursor: pointer;
+    color: #383535;
+}
+button.active__faq__nav, .faq__nav button:hover{
+    background: var(--green);
+    color: #fff;
+    font-weight: 600;
+}
+.faq__content{
+    position: relative;
+    height: 100%;
+}
+.faq__content > div{
+    display:flex;
+    align-items: start;
+    transition: all .5s ease-in-out;
+    overflow: hidden;
+}
+.accardion{
+    flex: 0 0 100%;
+    transition: all .5s ease-in-out;
+}
+
+.accardion > li{
+    border-top: 1px solid #eee;
+    max-width: 960px;
+    overflow: hidden;
+    padding: 12px 0;
+}
+
+
+.accardion > li:last-child{
+    border-bottom: 1px solid #eee;
+}
+.faq__content h4, .vacancy h4, .documents h4{
+    font: 500 24px/32px Montserrat;
+    color: var(--gray);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.faq__content h4 span:first-child, .vacancy h4 span:first-child{
+    width: 80%;
+}
+
+
+.faq__btn{
+    padding: 8px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    transition: all .5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.accardion > li:hover .faq__btn{
+    background: #eee;
+}
+
+
+.accardion__item p, .accardion__item li, .accardion__item a {
+    font: 300 18px/28px Montserrat;
+    color: var(--gray);
+}
+.accardion__item {
+    padding:  20px 0 0 0;
+}
+.active__accardion .faq__btn{
+    transform: rotate(45deg);
+    background: #eee;
+}
+
+/*vk__video*/
+.video{
+    margin: 90px 0 50px 0;
+    max-width: 860px;
+}
+.vk__video iframe{
+    width: 100%;
+    height: 500px;
+}
+/*documents*/
+.documents{
+    margin: 0 auto 45px auto;
+}
+
+/*News*/
+
+.news__filter ul, .more__news__filter{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 30px 0 40px 0;
+    flex-wrap: wrap;
+}
+.news__filter button, .more__news__filter button, .more__news__filter a{
+    display: block;
+    font: 600 20px Montserrat;
+    color: var(--gray);
+    margin: 0 10px 10px 0;
+    border: 0;
+    background: #f5f5f5;
+    cursor: pointer;
+    padding: 6px 18px;
+    transition: all .3s ease-in-out;
+    border-radius: 10px;
+}
+.news__filter li:last-child button{
+    margin: 0;
+}
+
+.news__items{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 360px));
+    gap: 45px 10px;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 30px auto 0 auto;
+}
+.news__data{
+    font: 300 12px Montserrat;
+    color: var(--gray);
+    margin: 15px 0 10px 0;
+}
+.news__items  h3{
+    font: 700 23px/31px Montserrat;
+    color: var(--gray);
+    margin: 0 0 8px 0;
+}
+.news__text{
+    font: 300 16px/25px Montserrat;
+    color: var(--gray);
+}
+
+.news__items article:hover{
+    box-shadow: 0 0 10px #ccc;
+    transform: scale(1.03);
+
+}
+.news__items article{
+    padding: 15px 10px;
+    transition: all .5s ease-in-out;
+}
+
+button.active__filter,.active__filter, .news__filter button:hover, .more__news__filter button:hover, .more__news__filter a:hover{
+    color: #fff;
+    background: var(--green);
+}
+
+
+
+/*more__news*/
+.more__news{
+    margin: 60px auto 40px auto;
+}
+.more__news > h3, .news__block > h3{
+    font: 700 36px Montserrat;
+    color: var(--gray);
+}
+.news__block > h3{
+    font-size: 32px;
+}
+.more__news__filter button, .more__news__filter a{
+    font-size: 16px;
+    padding: 10px 30px;
+}
+.more__news__filter a{
+    margin-right: 0;
+}
+
+
+.add__more{
+    display: table;
+    margin: 50px auto 0 auto;
+    border-radius: 10px;
+    background-color: var(--green);
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    color: #fff;
+    font: 700 16px Montserrat;
+    padding: 20px 50px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.add__more:hover{
+    box-shadow: 0 0 10px var(--green);
+}
+
+/*Media*/
+@media only screen and (max-width: 960px){
+    .container{
+        max-width: 600px;
+    }
+    h2{
+        font-size: 48px;
+        line-height: 59px;
+    }
+    .map_section{
+        grid-template-columns: 40% 60%;
+    }
+    #locationList{
+        margin: 0 5px 0 0;
+    }
+    #locationList li{
+        padding: 10px 5px 10px 10px;
+    }
+    .map__section h4, .info__block h3, .about__school h3, .faq__block h3, .vacancy h3, .documents h3{
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .info__items article{
+        flex-basis: 100%;
+        margin: 0 0 30px 0;
+    }
+    .info__items article:last-child{
+        margin: 0;
+    }
+    .faq__nav button{
+        padding: 10px;
+    }
+    .faq__content h4, .vacancy h4, .documents h4{
+        font-size: 22px;
+        line-height: 30px;
+    }
+   
+}
+@media only screen and (max-width: 720px) { 
+    .news__items{
+        grid-template-columns: repeat(auto-fill, minmax(130px, 280px));
+    }
+    main{
+        padding: 70px 0;
+    }
+}
+@media only screen and (max-width: 620px) { 
+    h2{
+        font-size: 30px;
+    }
+    .news__items{
+        grid-template-columns: repeat(auto-fill, minmax(130px, 100%));
+    }
+   .news__items img{
+    max-width: 100%;
+   }
+   .more__news__filter button, .more__news__filter a{
+    font-size: 14px;
+   }
+   .map_section{
+    grid-template-columns: 100%;
+   }
+   #map{
+    height: 400px;
+   }
+   #locationList{
+    text-align: center;
+    margin: 0;
+   }
+   .faq__nav{
+    flex-direction: column;
+    margin: 0 0 30px 0;
+   }
+   .faq__nav li{
+    margin: 0;
+    width: 100%;
+   }
+}

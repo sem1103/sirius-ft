@@ -1,0 +1,331 @@
+
+
+main{
+    padding: 120px 0 0 0;
+}
+
+h2{
+    font: 700 52px Montserrat;
+    color: var(--gray);
+    line-height: 64px;
+}
+
+
+/*Members*/
+.council__members{
+    padding-bottom: 80px;
+    margin-bottom: 85px;
+    border-bottom: 1px solid #2e2d2c40;
+}
+.council__members > h3{
+    font: 700 24px Montserrat;
+    line-height: 34px;
+    color: var(--gray);
+    margin: 120px 0 60px 0;
+}
+
+.members > article{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 35px;
+    margin: 0 0 70px 0;
+    width: max-content;
+}
+.members article{
+    padding: 10px;
+    transition: all .3s ease-in-out;
+    border-radius: 4px;
+
+}
+.members article:hover{
+    transform: scale(1.03) translateY(-3px);
+    box-shadow: 0 0 10px #2e2d2c60;
+}
+.members img{
+    max-width: 260px;
+    width: 100%;
+    height: 100%;
+    max-height: 352px;
+    object-fit: cover;
+
+}
+.members a{
+    display: block;
+    font: 700 18px Montserrat;
+    color: #000;
+}
+.members p a{
+    font: 16px Montserrat;
+    line-height: 25px;
+    color: #000;
+    margin: 10px 0 0 0;
+}
+
+.other__members{
+    display: flex;
+    gap: 10px 35px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.other__members article{
+   width: calc(25% - 50px);
+ 
+}
+.other__members h4{
+    margin: 25px 0 0 0;
+}
+
+
+/*about__quantity*/
+
+.about__quantity h3{
+    font: 300 18px Montserrat ;
+    color: var(--gray);
+    width: 50%;
+}
+
+.structure__items{
+    margin: 70px 0 55px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.structure__items li{
+    display: flex;
+    padding: 25px 15px;
+    background-color: #f3f3f3;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #0000001a;
+    flex-basis: calc(20% - 25px);
+    font: 18px Montserrat;
+    line-height: 28px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/*core__competenc*/
+
+.core__competenc, .council__staf{
+    background-color: #f3f3f3;
+    padding: 80px 0 ;
+}
+
+.core__competenc h3, .council__staf h3{
+    font: 700 24px Montserrat;
+    line-height: 30px;
+    color: var(--gray);
+}
+.core__competenc ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px 30px;
+    margin-top: 90px;
+    justify-content: space-between;
+}
+.core__competenc li{
+    flex-basis: calc(50% - 30px);
+}
+.core__competenc p{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font: 20px Montserrat;
+    line-height: 27px;
+    color: #2e2d2c;
+}
+
+/*first__convosation*/
+
+.first__convosation{
+    background-color: #fff;
+}
+
+/*council__staf*/
+.council__staf p{
+    font: 300 20px  Montserrat;
+    line-height: 31px;
+    margin: 35px auto 55px auto;
+}
+.council__staf p a{
+    text-decoration: underline;
+    font-weight: 700;
+    color: var(--gray);
+}
+.council__staf__persons{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.council__staf__persons article{
+    flex-basis: calc(50% - 30px);
+    display: flex;
+    align-items: flex-end;
+    gap: 25px;
+}
+.council__staf__persons h4{
+    font: 700 18px Montserrat;
+}
+.council__staf__persons p{
+    font: 400 16px Montserrat;
+    line-height: 25px;
+    margin: 10px 0 0 0;
+
+}
+.council__staf__persons img{
+    max-width: 260px;
+}
+
+
+/*all__docs*/
+.all__docs{
+    margin: 60px auto 90px auto;
+}
+.all__docs img{
+    width: 40px;
+    transition: all .3s ease-in-out;
+}
+.all__docs a{
+    display: flex;
+    align-items: center;
+    font: 700 24px Montserrat;
+    color: var(--gray);
+    gap: 10px;
+    width: max-content;
+}
+.all__docs a:hover {
+    text-decoration: underline;
+}
+.all__docs a:hover img{
+    transform: scale(1.1);
+}
+
+
+
+/*Media*/
+@media only screen and (max-width:1000px){
+    .council__staf__persons article{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media only screen and (max-width:780px) {
+    .other__members article{
+        width: calc(50% - 50px);
+    }
+    .council__staf__persons, .core__competenc ul{
+        flex-direction: column;
+    }
+    .council__staf__persons article{
+        justify-content: center;
+    }
+    .person__desc{
+        max-width: 220px;
+    }
+     .all__docs , .council__staf h3, .council__staf p, .core__competenc ul, .core__competenc h3, .about__quantity, .council__members  {
+        width: 80%;
+    }
+    .structure__items li{
+        flex-basis: calc(50% - 13px);
+    }
+    .about__quantity h3{
+        width: 100%;
+    }
+    .members > article{
+        flex-direction: column;
+        margin: auto;
+    }
+   
+    .council__staf__persons article{
+        flex-direction: row;
+        align-items: end;
+    }
+}
+
+@media only screen and (max-width:480px){
+    main{
+        padding: 90px 0 0 0;
+    }
+    .all__docs , .council__staf h3, .council__staf p, .core__competenc ul, .core__competenc h3, .about__quantity, .council__members  {
+        width: 100%;
+    }
+    .members > article{
+        flex-direction: column;
+        align-items: start;
+        width: max-content;
+        margin: auto;
+        gap: 15px;
+    }
+    .other__members{
+        gap: 15px 20px;
+    }
+    .other__members article{
+        width: calc(50% - 20px);
+    }
+    .other__members h4{
+        margin: 15px 0 0 0 ;
+    }
+    .council__members {
+        width: 95%;
+    }
+    .structure__items{
+        align-items: center;
+        flex-direction: column;
+    }
+    .structure__items li{
+        width: 80%;
+        font-size: 16px;
+    }
+    .council__staf__persons h4{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .council__staf__persons p{
+        font-size: 11px;
+        line-height: 16px;
+    }
+    .council__staf__persons article{
+        width: 70%;
+        flex-basis: 100%;
+        margin: auto;
+    }
+    .council__staf__persons img{
+        max-width: 180px;
+    }
+   
+    h2{
+        font-size: 30px;
+        line-height: 37px;
+    }
+    .council__members > h3{
+        margin: 50px 0 40px 0;
+    }
+    .other__members article > a{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .other__members{
+        align-items: stretch;
+    }
+    .members a{
+        font-size: 14px;
+    }
+    .other__members article {
+        width: calc(50% - 12px);
+    }
+    .members p a{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .council__members {
+        width: 100%;
+    }
+}

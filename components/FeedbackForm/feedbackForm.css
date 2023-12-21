@@ -1,0 +1,117 @@
+
+/*feedback form*/
+.feedback__form{
+    background-color: #f3f3f3;
+    padding: 80px 0 ;
+}
+.feedback{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex-direction: row;
+}
+.feedback h5{
+    font: 700 42px Montserrat;
+    color: #000;
+    line-height: 50px;
+}
+.form__desc{
+    flex-basis: 40%;
+}
+.form__desc p{
+    margin: 50px 0 0 0;
+    font: 300 18px Montserrat;
+    color: #000;
+}
+.feedback form{
+    flex: 1;
+    margin: 10px 0 0 0;
+}
+.feedback input, textarea{
+    display: block;
+    width: 100%;
+    margin: 0 0 25px 0;
+    padding: 15px 20px ;
+    font: 16px Montserrat;
+    border: 1px solid #cfcfcf;
+    outline: 0;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+    resize: vertical;
+}
+.feedback input:focus-visible, textarea:focus-visible{
+    box-shadow: 0 0 10px #cfcfcf;
+    transform: translateY(-2px);
+}
+
+form button {
+    color: #fff;
+    background: var(--green);
+    padding: 15px 40px;
+    font: 600 16px Montserrat;
+    display: table;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+    border: 0;
+    cursor: pointer;
+}
+form button:hover,form button:focus-visible {
+    box-shadow: 0 0 10px #0000002e;
+    transform: translateY(-3px);
+    outline: 0;
+}
+form p{
+    font: 300 14px Montserrat;
+    margin: 20px  0 0 0;
+    opacity: .55;
+}
+form label{
+    position: relative;
+}
+label span{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font: 16px Montserrat;
+    opacity: .55;
+    left: 20px;
+    background-color: #fff;
+    transition: all .3s ease-in-out;
+    cursor: text;
+}
+label:last-of-type span{
+    top: 25px;
+}
+label span.has__value{
+    top: 0;
+    left: 15px;
+    font-size: 14px;
+}
+
+@media only screen and (max-width:780px) {
+  
+    .feedback {
+        width: 80%;
+        flex-direction: column;
+    }
+   
+}
+
+
+@media only screen and (max-width:480px){
+    main{
+        padding: 90px 0 0 0;
+    }
+    .feedback {
+        width: 100%;
+    }
+   
+    .feedback h5{
+        font-size: 30px;
+    }
+    .feedback {
+        width: 80%;
+    }
+   
+}

@@ -1,0 +1,436 @@
+
+/*billboard*/
+.billboard{
+    margin: 40px auto;
+}
+
+
+/*ONE__NEWS*/
+.one__news, .side__one__news{
+    display: flex;
+    gap: 39px;
+}
+.side__one__news{
+    flex-direction: column;
+}
+.one__news img{
+    display: block;
+}
+.one__news article{
+    flex-basis: 759px;
+}
+.one__news h2 a{
+    line-height: 30px;
+    font: 700 23px Montserrat;
+    color: var(--gray);
+}
+.one__news__data{
+    color: var(--gray);   
+    line-height: 1.55;
+    font: 300 14px Montserrat;
+    margin: 20px 0 10px 0;
+}
+.one__news__text{
+    color: var(--gray);
+    font: 300 18px Montserrat;
+    line-height: 28px;
+    margin: 30px 0 60px 0;
+}
+
+h2{
+    font: 700 32px Montserrat;
+    color: var(--gray);
+    margin: 0 0 40px 0;
+}
+h3{
+    font: 700 23px Montserrat;
+    color: var(--gray);
+    margin: 10px 0 8px 0;
+}
+
+
+/*NEWS*/
+.all__news, .anti__corruption a, .federal__teretory__slider__items a{
+    color: #fff;
+    background: var(--green);
+    padding: 20px 60px;
+    font: 600 16px Montserrat;
+    display: table;
+    margin: 90px auto 0 auto;
+    border-radius: 20px;
+    transition: all .3s ease-in-out;
+}
+.all__news:hover, .anti__corruption a:hover, .federal__teretory__slider__items a:hover{
+    color: #fff;
+    box-shadow: 0 0 10px #0000002e;
+    transform: translateY(-3px) ;
+    
+}
+.news__items{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px 40px;
+    justify-content: start;
+}
+
+.news_item img{
+    margin: 0 0 20px 0;
+}
+.news__data{
+    font: 300 12px Montserrat;
+    color: var(--gray);
+    margin: 10px 0 0 0;
+}
+.news__text{
+    line-height: 1.55;
+    font: 300 16px Montserrat;
+    color: #000000e6;
+}
+
+/*BANNER*/
+.banner{
+    background: linear-gradient(138.4deg,#38bafe 26.49%,#2d73bc 79.45%);
+    margin-top: 75px;
+}
+.banner__container{
+    max-width: 1060px;
+    margin: auto;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+}
+.banner__img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 70%;
+    background: url(../img/banner-bg.webp) 0 center/cover;
+    z-index: 0;
+
+}
+.banner__desc{
+    padding: 30px;
+    max-width: 300px;
+}
+.banner__desc h4{
+    line-height: 32px;
+    font-size: 24px ;
+    font-weight: 600;
+    color: #fff;
+}
+.banner__desc p{
+    color: #fff;
+    margin: 12px 0 24px 0;
+}
+.banner__desc button{
+    font: 18px Arial;
+    line-height: 24px;
+    color: #fff;
+    background: #2a63ad;
+    border: 0;
+    outline: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 15px 20px;
+}
+
+.banner__logo{
+    text-align: right;
+    font: 32px Arial;
+    color: #fff;
+    background-color: #2d73bc;
+    padding: 30px 30px 30px 50px;
+    border-radius: 80px 0 0 0;
+    z-index: 1;
+}
+.banner__logo p{
+    font-weight: 600;
+}
+.banner__logo p:first-child{
+    font-size: 22px;
+    text-transform: uppercase;
+}
+.banner__logo p span{
+    color:#ee3f58 ;
+}
+
+
+/*WORK__AREAS*/
+.work__areas{
+    padding: 120PX 0 30px 0;
+}
+.work__areas h3{
+    font: 700 42px Montserrat;
+    color: #3d3c3b;
+    margin: 0 auto 90px auto;
+    line-height: 52px;
+}
+.area__items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.area__item{
+    padding: 30px 30px 40px 30px;
+    background-color: var(--green);
+    flex-basis: calc(50% - 20px);
+}
+.area__item h5{
+    font: 700 32px Montserrat;
+    line-height: 43px;
+    color: #fff;
+}
+.area__item a{
+    font: 700 16px Montserrat;
+    line-height: 25px;
+    color: #fff;
+}
+.area__item a::after{
+    content: '\00a0→';
+}
+
+/*anti__corruption*/
+.anti__corruption h3, .federal__teretory h3{
+    margin: 60px 0 15px 0;
+    font: 700 42px Montserrat;
+    line-height: 52px;
+}
+.anti__corruption a{
+    margin: 60px 0 45px 0;
+}
+
+
+/*federal__teretory*/
+
+
+.federal__teretory h3{
+    margin: 100px auto 60px auto;
+}
+.federal__teretory__slider__items a{
+    margin: 0;
+}
+.federal__teretory__slider__items h5{
+    font: 700 34px Montserrat;
+    color: #fff;
+}
+.federal__teretory__slider__items p{
+    margin: 30px 0 50px 0;
+    font-size: 20px;
+    color: #fff;
+}
+.federal__teretory__slider{
+    background: url(../img/slider1.webp) 0 center/cover;
+    padding: 160px 0;
+    position: relative;
+    transition: opacity .6s ease-in-out;
+}
+
+.federal__teretory__slider__items > div{
+    display: none;
+}
+.federal__teretory__slider__items .active__slide{
+    display: block;
+}
+.prevNext{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);    
+    transition: all .3s ease-in-out;
+}
+.prevNext svg{
+    width: 7px;
+    height: 12px;
+    margin: auto;
+}
+.prevNext:hover{
+    opacity: .8;
+}
+.prev__btn{
+    left: 30px;
+    transform: translateY(-50%) rotate(180deg);    
+
+}
+.next__btn{
+    right: 30px;
+}
+
+/*dots*/
+.dots{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.dot{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #fff ;
+    border-radius: 50%;
+    outline: 0;
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    transition: all .3s ease-in-out;
+}
+
+
+
+.dot:hover, .active__dot{
+    background: #fff;
+}
+
+img.mobile__img, .mobile__img{
+    display: none;
+}
+
+
+
+
+
+/*Page-Media*/
+@media only screen and (max-width: 1300px){
+    .federal__teretory__slider__items.container {
+        padding: 0 65px;
+        max-width: 1220px;
+    }
+}
+
+@media only screen and (max-width: 678px) {
+    .one__news {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .side__one__news{
+        flex-direction: row;
+    }
+    .one__news article{
+        flex-basis: auto;
+    }
+    .one__news__text{
+        margin-bottom: 0;
+    }
+    .one__news, .side__one__news{
+        gap: 25px;
+    }
+    .news__items{
+        grid-template-columns: auto;
+    }
+    .container{
+        padding:  0 30px;
+    }
+    .all__news{
+        margin-top: 45px;
+    }
+    .banner__img{
+        background-image: url(../img/banner-bg2.webp);
+        width: 55%;
+    }
+    .banner__logo p{
+        font-size: 24px;
+    }
+    .banner__logo{
+        padding: 30px 30px 24px 40px;
+    }
+    .area__item{
+        flex-basis: 100%;
+    }
+    .area__items{
+        gap: 20px;
+    }
+    .area__item h5{
+        font-size: 20px;
+    }
+   
+}
+@media only screen and (max-width: 600px){
+    .banner__container{
+        flex-direction: column;
+        align-items: start;
+    }
+    .banner__logo{
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 0 0 0 80px;
+        
+    }
+    .banner__img{
+        position: initial;
+        min-height: 336px;
+        align-self: flex-end;
+        order: -1;
+        width: 75%;
+    }
+    .banner__desc{
+        max-width: 100%;
+    }
+    .banner__desc button{
+        display: table;
+        margin: auto;
+    }
+    .anti__corruption h3, .federal__teretory h3, .work__areas h3{
+        font-size: 30px;
+        line-height: 37px;
+    }
+}
+
+@media only screen and (max-width: 430px){
+   
+    .billboard.container, .one__news.container{
+        padding: 0;
+        margin: 0 auto 25px auto;
+    }
+    img.desc__img{
+        display: none;
+    }
+    img.mobile__img,  .mobile__img{
+        display: initial;
+    }
+    .side__one__news{
+        order: -1;
+        flex-direction: column;
+    } 
+    .one__news article:first-child, .container{
+        padding: 20px;
+    }
+   
+    .federal__teretory__slider__items.container{
+        padding: 0 50px;
+    }
+    .prev__btn{
+        left: 5px;
+    }
+    .next__btn{
+        right: 5px;
+    }
+    .banner__logo p{
+        font-size: 20px;
+    }
+    .banner__img{
+        width: 90%;
+    }
+    .work__areas{
+        padding: 70px 0 25px 0;
+    }
+    .work__areas h3{
+        margin: 0 0 40px 0;
+    }
+    .federal__teretory h3{
+        margin: 20px auto  40px auto;
+    }
+   
+}
