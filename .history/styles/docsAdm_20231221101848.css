@@ -11,6 +11,7 @@ h2{
 .docs__filter{
     display: flex;
     margin: 80px 0 90px 0;
+    flex-wrap: wrap;
 }
 .docs__filter button{
     padding: 15px 22px;
@@ -116,9 +117,6 @@ button.active__filter{
     }
     .docs__filter li{
         width: 50%;
-    }
-    .docs__filter{
-        flex-wrap: wrap;
     }
 }
 @media only screen and (max-width: 560px){
