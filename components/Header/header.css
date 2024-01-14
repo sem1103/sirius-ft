@@ -86,6 +86,7 @@ nav > ul > li{
     gap: 18px;
     left: 50%;
     text-transform: initial;
+    z-index: 9999;
 }
 .submenu li{
     padding: 0;
